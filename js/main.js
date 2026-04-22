@@ -6,22 +6,22 @@ var SPA = new class {
         this.sessionId = this.getCookie("sessionId");
         this.pages = {
             "/": ["/partials/home.html", "/partials/menu.html"],
-            "/contact": ["/partials/contact.html", "/partials/menu.html"],
-            "/privacy-policy": ["/partials/privacy-policy.html", "/partials/menu.html"],
-            "/terms-and-conditions": ["/partials/terms-and-conditions.html", "/partials/menu.html"],
-            "/dashboard/home": ["/partials/dashboard-home.html", "/partials/dashboard.html"],
-            "/dashboard/users": ["/partials/dashboard-users.html", "/partials/dashboard.html"],
-            "/dashboard/websites": ["/partials/dashboard-websites.html", "/partials/dashboard.html"],
-            "/dashboard/recordings": ["/partials/dashboard-recordings.html", "/partials/dashboard.html"],
-            "/dashboard/settings": ["/partials/dashboard-settings.html", "/partials/dashboard.html"],
-            "/dashboard/settings/account": ["/partials/dashboard-settings-account.html", "/partials/dashboard.html"],
-            "/dashboard/settings/time-format": ["/partials/dashboard-settings-timeFormat.html", "/partials/dashboard.html"],
-            "/dashboard/settings/legal": ["/partials/dashboard-settings-legal.html", "/partials/dashboard.html"],
-            "/change-email": ["/partials/changeEmail.html"],
-            "/reset-password": ["/partials/resetPassword.html"],
-            "/forgot-password": ["/partials/forgotPassword.html"],
-            "/login": ["/partials/login.html"],
-            "/signup": ["/partials/signup.html"]
+            "/contact/": ["/partials/contact.html", "/partials/menu.html"],
+            "/privacy-policy/": ["/partials/privacy-policy.html", "/partials/menu.html"],
+            "/terms-and-conditions/": ["/partials/terms-and-conditions.html", "/partials/menu.html"],
+            "/dashboard/home/": ["/partials/dashboard-home.html", "/partials/dashboard.html"],
+            "/dashboard/users/": ["/partials/dashboard-users.html", "/partials/dashboard.html"],
+            "/dashboard/websites/": ["/partials/dashboard-websites.html", "/partials/dashboard.html"],
+            "/dashboard/recordings/": ["/partials/dashboard-recordings.html", "/partials/dashboard.html"],
+            "/dashboard/settings/": ["/partials/dashboard-settings.html", "/partials/dashboard.html"],
+            "/dashboard/settings/account/": ["/partials/dashboard-settings-account.html", "/partials/dashboard.html"],
+            "/dashboard/settings/time-format/": ["/partials/dashboard-settings-timeFormat.html", "/partials/dashboard.html"],
+            "/dashboard/settings/legal/": ["/partials/dashboard-settings-legal.html", "/partials/dashboard.html"],
+            "/change-email/": ["/partials/changeEmail.html"],
+            "/reset-password/": ["/partials/resetPassword.html"],
+            "/forgot-password/": ["/partials/forgotPassword.html"],
+            "/login/": ["/partials/login.html"],
+            "/signup/": ["/partials/signup.html"]
         }
         this.start();
     }
