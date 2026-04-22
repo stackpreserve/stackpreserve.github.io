@@ -1,0 +1,56 @@
+.user-lists__title {
+    margin: 0px;
+}
+
+/*.user-lists__inner {
+    margin-bottom: 30px;
+}*/
+
+.user-lists__website-title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.user-details__title-cont {
+    display: flex;
+    align-items: center;
+}
+
+.back-to-list {
+    margin-right: 10px;
+}
+
+.back-to-list > img {
+    width: 30px;
+}
+
+.user-details__id {
+    max-width: 90vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px;
+}
+
+.user-lists__loader-list-el {
+    margin-top: 30px;
+}
+
+.user-not-found__message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-not-found__message * {
+    margin: 0px;
+}
+
+.user-not-found__message h1 {
+    margin-bottom: 10px;
+}
+
+.user-not-found__back-cont {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,43 @@
+.title-cont {
+    display: flex;
+    align-items: center;
+}
+
+.title-cont__back-to-list {
+    margin-right: 10px;
+}
+
+.title-cont__back-to-list > img {
+    width: 30px;
+}
+
+.title-cont__setting {
+    max-width: 90vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px;
+}
+
+.loader-list-el {
+    margin-top: 30px;
+}
+
+.time-format {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-format__dropdown {
+    max-width: 250px;
+}
+
+.time-format__explanation {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.time-format__submit {
+    margin-top: 30px;
+    width: fit-content;
+}

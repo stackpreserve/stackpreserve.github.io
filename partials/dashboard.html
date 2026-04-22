@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="http://localhost:8080/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>Dashboard - StackPreserve</title>
+</head>
+<body>
+    <div class="cover" style="display: none"></div>
+    <div class="confirmation-message">
+        <img class="confirmation-message__icon" src="assets/error.webp">
+        <p class="confirmation-message__text"></p>
+    </div>
+    <div class="menu">
+        <div class="menu__close">
+            <img class="menu__close-icon" src="assets/back.webp">
+        </div>
+        <div class="menu__inner">
+            <img class="menu__logo" src="assets/logo.webp">
+            <div class="menu__line"></div>
+            <ul class="item-list menu__item-list">
+                <li href="/dashboard/home"><img src="assets/home.webp"><img src="assets/home-selected.webp"><p>Home</p></li>
+                <li href="/dashboard/recordings"><img src="assets/recordings.webp"><img src="assets/recordings-selected.webp"><p>Recordings</p></li>
+                <li href="/dashboard/users"><img src="assets/users.webp"><img src="assets/users-selected.webp"><p>Users</p></li>
+                <li href="/dashboard/websites"><img src="assets/websites.webp"><img src="assets/websites-selected.webp"><p>Websites</p></li>
+            </ul>
+            <div class="menu__issues-cont">
+                <p class="menu__issues">Having issues? <a class="menu__contact-link" href="/contact" target="_blank" rel="noopener noreferrer">Contact</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="page-center">
+        <div class="page-cont">
+            <div class="nav-bar">
+                <div class="search nav-bar__search-cont">
+                    <img class="search__icon nav-bar__search-icon" src="assets/search.webp">
+                    <input placeholder="Search" class="searchInput search__input nav-bar__search-input">
+                </div>
+                <div class="nav-bar__left">
+                    <div class="icon nav-bar__menu"><img src="assets/menu.webp"></div>
+                    <div class="icon nav-bar__search"><img src="assets/search.webp"></div>
+                </div>
+                <div class="nav-bar__right">
+                    <div class="icon nav-bar__community"><img src="assets/discord.webp"></div>
+                    <div href="/dashboard/settings" class="icon nav-bar__settings"><img class="nav-bar__settings-icon" src="assets/settings.webp"></div>
+                    <div class="icon nav-bar__profile"><img src="assets/users.webp"></div>
+                </div>
+            </div>
+            <div class="page"></div>
+        </div>
+    </div>
+    <div style="display: none" class="community-menu">
+        <h2 class="community-menu__title">Join us!</h2>
+        <p class="community-menu__description">Join our community discord for quick help, suggestions or offers.</p>
+        <a class="community-menu__join" href="https://discord.gg/DmGMZDtwp" target="_blank" rel="noopener noreferrer">Join server</a>
+    </div>
+    <div style="display: none" class="profile-menu">
+        <p class="profile-menu__email">loading...</p>
+        <ul class="item-list profile-menu__item-list">
+            <li class="profile-menu__signout"><img src="assets/signout.webp"><p>Sign out</p></li>
+        </ul>
+    </div>
+    <div style="display: none" class="confirm-signout">
+        <p>Are you sure you want to sign out?</p>
+        <div class="confirm-signout__actions">
+            <button class="button confirm-signout__cancel">Cancel</button>
+            <button class="button confirm-signout__confirm">Sign out</button>
+        </div>
+    </div>
+    <div style="display: none" class="mobile-search">
+        <div class="search mobile-search__search-cont">
+            <img class="search__icon mobile-search__search-icon" src="assets/search.webp">
+            <input placeholder="Search" class="search__input mobile-search__search-input">
+        </div>
+        <div class="mobile-search__close"><img src="assets/close.webp"></div>
+    </div>
+    <div style="display: none" class="search-suggestions">
+        <!--<p href="/dashboard/settings">billing > settings</p>
+        <p href="/dashboard/settings/account">billing > dashboard</p>
+        <p href="/dashboard/settings/time-format">billing changes > profile settings</p>-->
+    </div>
+    <div class="first-login-message">
+        <h2 class="first-login-message__title">Welcome!</h2>
+        <p class="first-login-message__text">Start tracking by adding your site in the Websites tab.</p>
+        <button class="button first-login-message__close">Let's go</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

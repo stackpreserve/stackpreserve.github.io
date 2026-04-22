@@ -1,0 +1,40 @@
+.title-cont {
+    display: flex;
+    align-items: center;
+}
+
+.title-cont__back-to-list {
+    margin-right: 10px;
+}
+
+.title-cont__back-to-list > img {
+    width: 30px;
+}
+
+.title-cont__setting {
+    max-width: 90vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px;
+}
+
+.loader-list-el {
+    margin-top: 30px;
+}
+
+.legal {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.legal__text {
+    margin: 0px;
+}
+
+.legal__link {
+    text-decoration: none;
+    color: #11aaa2;
+}

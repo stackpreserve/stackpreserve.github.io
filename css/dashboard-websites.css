@@ -1,0 +1,179 @@
+.website-list__add-website {
+    display: flex;
+    align-items: center;
+}
+
+.website-list__add-website > img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.website-list__title-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.website-list__title {
+    margin: 0px;
+}
+
+.website-list__input-label {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.website-list__error {
+    margin: 0px;
+    margin-top: 5px;
+    color: #ef4639
+}
+
+.website-list__explanation {
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.website-list__code-cont {
+    margin-top: 30px;
+    display: flex;
+}
+
+.website-list__code-cont > pre {
+    background: #1e1e1e;
+    color: #dcdcdc;
+    padding: 1em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    overflow-x: auto;
+    font-family: "Fira Code", monospace;
+    margin: 0px;
+    width: 100%; /********/
+}
+
+.website-list__code-cont > pre > code {
+    font-size: 0.9rem;
+}
+
+.website-list__copy-code {
+    background-color: #1e1e1e;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.website-list__copy-code > img {
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.website-list__submit {
+    margin-top: 30px;
+}
+
+.website-details__title-cont {
+    display: flex;
+    align-items: center;
+}
+
+.website-details__back {
+    margin-right: 10px;
+}
+
+.website-details__back > img {
+    width: 30px;
+}
+
+.website-details__domain {
+    max-width: 90vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px;
+}
+
+.website-details__edit {
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #dadada;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.website-details__edit-icon {
+    width: 15px;
+}
+
+.website-details__modification {
+    margin-top: 10px;
+    display: flex;
+}
+
+.website-details__delete {
+    background-color: #ef4639;
+}
+
+.website-details__edit-explanation {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.website-details__edit-input-label {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.website-details__edit-error {
+    margin: 0px;
+    margin-top: 5px;
+    color: #ef4639
+}
+
+.website-details__delete-warning {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.website-details__delete-input-label {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.website-details__delete-submit {
+    margin-top: 15px;
+    background-color: #ef4639;
+}
+
+.website-not-found__message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.website-not-found__message * {
+    margin: 0px;
+}
+
+.website-not-found__message h1 {
+    margin-bottom: 10px;
+}
+
+.website-not-found__back-cont {
+    display: flex;
+    align-items: center;
+}
+
+.back-to-list {
+    margin-right: 10px;
+}
+
+.back-to-list > img {
+    width: 30px;
+}

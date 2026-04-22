@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <title>Create account - StackPreserve</title>
+</head>
+<body>
+    <div class="auth-form">
+        <div class="auth-form__first">
+            <h1 class="auth-form__title">Create account</h1>
+            <div class="auth-form__credentials">
+                <p class="auth-form__label">Email</p>
+                <input name="email" class="text-field auth-form__email">
+                <p style="display: none;" class="auth-form__email-error"></p>
+                <p class="auth-form__label">Password</p>
+                <div class="auth-form__password-field password-field">
+                    <input name="password" type="password" class="password-field__password auth-form__password">
+                    <div class="password-field__visibility"><img class="password-field__visibility-icon" draggable="false" src="assets/hide.webp"></div>
+                </div>
+                <p style="display: none;" class="auth-form__password-error"></p>
+                <div class="auth-form__options">
+                    <div class="auth-form__remember">
+                        <p>Remember me</p>
+                        <img class="auth-form__remember-icon" checked="false" draggable="false" src="assets/unchecked.webp">
+                    </div>
+                </div>
+                <button class="button auth-form__submit">Sign up</button>
+            </div>
+            <p class="auth-form__mistake">Already have an account? <a href="/login">Sign in</a></p>
+        </div>
+        <div style="display: none" class="auth-form__second">
+            <h1 class="auth-form__title">Verify email</h1>
+            <p class="auth-form__sent-info">A verification code has been sent to</p>
+            <b class="auth-form__email-text"></b>
+            <p class="auth-form__verification-instructions">Please check your inbox and enter the verification code below to verify your email address. If you cannot see the email in your inbox, make sure to check your SPAM folder. The code will expire in 15 minutes</p>
+            <div class="auth-form__resend-code">
+                <p style="color: #a7a7a7;" class="auth-form__resend-link">Resend code</p>
+                <p class="auth-form__resend-countdown"></p>
+            </div>
+            <div class="auth-form__code">
+                <input maxlength="1" class="text-field auth-form__code-digit">
+                <input maxlength="1" class="text-field auth-form__code-digit">
+                <input maxlength="1" class="text-field auth-form__code-digit">
+                <input maxlength="1" class="text-field auth-form__code-digit">
+                <input maxlength="1" class="text-field auth-form__code-digit">
+                <input maxlength="1" class="text-field auth-form__code-digit">
+            </div>
+            <button disabled class="button auth-form__verify-code">Verify</button>
+            <p class="auth-form__code-error"></p>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>

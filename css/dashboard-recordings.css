@@ -1,0 +1,76 @@
+.loader-list-el {
+    margin-top: 30px;
+}
+
+.title {
+    margin: 0px;
+}
+
+.lists-cont__website-title {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.player-window {
+    max-width: 1000px;
+}
+
+.player-window__data {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.player-window__data-item {
+    margin: 0px;
+    white-space: nowrap;
+}
+
+.player-window__nav-cont {
+    display: flex;
+    width: 100%;
+    margin-top: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-window__wrapper {
+    width: calc(100% - 86px);
+    position: relative;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#player {
+    transform-origin: top left;
+}
+
+.rr-player {
+    box-shadow: none !important;
+}
+
+.rr-player button {
+    color: #000000;
+}
+
+.rr-player .switch.svelte-9brlez label.svelte-9brlez.svelte-9brlez:before,
+.rr-player .rr-progress__step.svelte-19ke1iv.svelte-19ke1iv,
+.rr-player .rr-controller__btns.svelte-19ke1iv button.svelte-19ke1iv:active {
+    background: rgba(17, 170, 162, 0.5) !important;
+}
+
+.rr-player .rr-controller__btns.svelte-19ke1iv button.active.svelte-19ke1iv,
+.rr-player .rr-progress__handler.svelte-19ke1iv.svelte-19ke1iv,
+.rr-player .switch.svelte-9brlez input[type="checkbox"].svelte-9brlez:checked + label.svelte-9brlez::before {
+    background: #11aaa2 !important;
+}
+
+.rr-player .rr-player__frame {
+    background-color: #000000;
+}
+
+.rr-controller__btns button:not(:last-child) {
+    margin-right: 5px;
+}

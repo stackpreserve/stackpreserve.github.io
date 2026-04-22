@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <link rel="stylesheet" href="css/token.css">
+    <title>Confirm email change - StackPreserve</title>
+</head>
+<body>
+    <div class="token-form">
+        <img class="token-form__logo" src="assets/logo.webp">
+        <div class="loader token-form__loader"></div>
+        <div style="display: none" class="token-form__result token-form__success">
+            <h1 class="token-form__title">Success!</h1>
+            <p class="token-form__text">Your new email has been set, you can close this page.</p>
+        </div>
+        <div style="display: none" class="token-form__result token-form__result token-form__error">
+            <h1 class="token-form__title">Error</h1>
+            <p class="token-form__text">The token link does not exist or has expired, try resending it.</p>
+        </div>
+    </div>
+    <script src="js/changeEmail.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.page {
+    display: flex;
+    justify-content: center;
+}
+
+.legal {
+    width: 1200px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.legal h1, .legal h2 {
+    color: #111;
+}
+
+.legal p {
+    margin: 10px 0;
+}
+
+.legal ul {
+    margin: 10px 0 20px 20px;
+}
+
+.legal a {
+    text-decoration: none;
+    color: #11aaa2;
+}

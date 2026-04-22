@@ -1,0 +1,22 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin: 0px;
+    margin-top: 30px;
+}
+
+.text {
+    width: 70vw;
+    max-width: 600px;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.text a {
+    color: #11aaa2;
+    text-decoration: none;
+}

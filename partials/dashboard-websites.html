@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="css/dashboard-websites.css">
+<div style="display: none" class="website-list">
+    <div class="website-list__title-cont">
+        <h2 class="website-list__title">Websites</h2>
+        <button class="button website-list__add-website"><img src="assets/add.webp">Add website</button>
+    </div>
+    <div class="dyna-list website-list__dyna-list-el"></div>
+    <div style="display: none" class="website-list__form window">
+        <div class="window__close-cont">
+            <div class="window__close website-list__close"><img src="assets/close.webp"></div>
+        </div>
+        <div class="window__inner">
+            <h3 class="window__title">Add a new website</h3>
+            <p class="website-list__input-label">Enter website domain</p>
+            <input class="text-field website-list__input" placeholder="E.g. example.com">
+            <p style="display: none" class="website-list__error"></p>
+            <div class="website-list__code-cont">
+                <pre><code>&lt;script src="https://stackpreserve.com/main.js"&gt;&lt;/script&gt;</code></pre>
+                <div class="website-list__copy-code"><img src="assets/copy.webp"></div>
+            </div>
+            <p class="website-list__explanation">Make sure this script tag is present on every page of the website, or the ones that you want to track.</p>
+            <button class="button website-list__submit">Add website</button>
+        </div>
+    </div>
+</div>
+<div style="display: none" class="website-details">
+    <div class="website-details__title-cont">
+        <div class="icon back-to-list"><img src="assets/back.webp"></div>
+        <h2 class="website-details__domain"></h2>
+    </div>
+    <div class="website-details__detail-list-el detail-list"></div>
+    <div style="display: none" class="website-details__modification">
+        <button class="button website-details__edit">Edit domain<img class="website-details__edit-icon" src="assets/edit.webp"></button>
+        <button class="button website-details__delete">Delete</button>
+    </div>
+    <div style="display: none" class="website-details__edit-form window">
+        <div class="window__close-cont">
+            <div class="window__close website-details__edit-close"><img src="assets/close.webp"></div>
+        </div>
+        <div class="window__inner">
+            <h3 class="window__title">Change website domain</h3>
+            <p class="website-details__edit-input-label">Enter new domain</p>
+            <input class="text-field website-details__edit-input">
+            <p style="display: none" class="website-details__edit-error"></p>
+            <p class="website-details__edit-explanation">Make sure the new website has the same script tags.</p>
+            <button class="button website-details__edit-submit">Save changes</button>
+        </div>
+    </div>
+    <div style="display: none" class="website-details__delete-form window">
+        <div class="window__close-cont">
+            <div class="window__close website-details__delete-close"><img src="assets/close.webp"></div>
+        </div>
+        <div class="window__inner">
+            <h3 class="window__title">Delete website</h3>
+            <p class="website-details__delete-warning">Once a website is deleted, all its analytics like users and sessions get removed. This action cannot be undone. Type the domain name below to confirm deletion.</p>
+            <p class="website-details__delete-input-label">Enter domain name</p>
+            <input class="text-field website-details__delete-input">
+            <button class="button website-details__delete-submit">Delete website</button>
+        </div>
+    </div>
+</div>
+<div style="display: none" class="website-not-found">
+    <div class="website-not-found__back-cont">
+        <div class="icon back-to-list"><img src="assets/back.webp"></div>
+    </div>
+    <div class="website-not-found__message">
+        <h1>404</h1>
+        <p>Website not found.</p>
+    </div>
+</div>
+<script src="js/dashboard-websites.js"></script>

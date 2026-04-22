@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <title>Login - StackPreserve</title>
+</head>
+<body>
+    <div class="auth-form">
+        <h1 class="auth-form__title">Login</h1>
+        <div class="auth-form__credentials">
+            <p class="auth-form__label">Email</p>
+            <input name="email" class="text-field auth-form__email">
+            <p class="auth-form__label">Password</p>
+            <div class="auth-form__password-field password-field">
+                <input name="password" type="password" class="password-field__password auth-form__password">
+                <div class="password-field__visibility"><img class="password-field__visibility-icon" draggable="false" src="assets/hide.webp"></div>
+            </div>
+            <div class="auth-form__options">
+                <div class="auth-form__remember">
+                    <p>Remember me</p>
+                    <img class="auth-form__remember-icon" checked="false" draggable="false" src="assets/unchecked.webp">
+                </div>
+                <a class="auth-form__forgot-password" href="/forgot-password">Forgot password</a>
+            </div>
+            <button class="button auth-form__submit">Login</button>
+            <p style="display: none;" class="auth-form__login-error"></p>
+        </div>
+        <p class="auth-form__mistake">Don't have an account? <a class="auth-form__mistake" href="/signup">Sign up</a></p>
+    </div>
+    <script src="js/auth.js"></script>
+</body>
+</html>

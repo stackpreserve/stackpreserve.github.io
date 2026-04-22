@@ -1,0 +1,137 @@
+.title-cont {
+    display: flex;
+    align-items: center;
+}
+
+.title-cont__back-to-list {
+    margin-right: 10px;
+}
+
+.title-cont__back-to-list > img {
+    width: 30px;
+}
+
+.title-cont__setting {
+    max-width: 90vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px;
+}
+
+.loader-list-el {
+    margin-top: 30px;
+}
+
+.account__section-title {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.account__credential {
+    display: flex;
+    gap: 5px;
+}
+
+.account__credential-info {
+    border: 1px solid #dadada;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+}
+
+.account__credential-info span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+
+.account__credential-edit {
+    background-color: #f0f0f0;
+    border: 1px solid #dadada;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.account__credential-edit-icon {
+    width: 15px;
+}
+
+.account__delete-account {
+    background-color: #ef4639;
+    width: fit-content;
+}
+
+.account__email-explanation {
+    margin: 0px;
+    margin-top: 30px;
+}
+
+.account__email-password-label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.account__email-new-label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.account__email-password-error, .account__email-new-error {
+    margin: 0px;
+    margin-top: 5px;
+    color: #ef4639;
+}
+
+.account__email-submit {
+    margin-top: 30px;
+}
+
+.account__password-cur-label {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.account__password-new-label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.account__password-submit {
+    margin-top: 30px;
+}
+
+.account__password-new-error, .account__password-cur-error {
+    margin: 0px;
+    margin-top: 5px;
+    color: #ef4639;
+}
+
+.account__delete-warning {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.account__delete-password-label {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.account__delete-submit {
+    margin-top: 15px;
+    background-color: #ef4639;
+}
+
+.account__delete-error {
+    margin: 0px;
+    margin-top: 5px;
+    color: #ef4639;
+}

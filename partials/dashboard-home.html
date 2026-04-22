@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="css/dashboard-home.css">
+<h2 class="today-title">Today</h2>
+<div class="title-divider"></div>
+<div class="dyna-list today-overview-loader"></div>
+<div style="display: none" class="today-overview overview">
+    <div class="overview__counter">
+        <p class="overview__counter-title">Views</p>
+        <h2 class="overview__counter-num today-overview__views"></h2>
+    </div>
+    <div class="overview__counter">
+        <p class="overview__counter-title">Recordings</p>
+        <h2 class="overview__counter-num today-overview__recordings"></h2>
+    </div>
+    <div class="overview__counter">
+        <p class="overview__counter-title">New countries</p>
+        <h2 class="overview__counter-num today-overview__new-countries"></h2>
+    </div>
+    <div class="overview__counter">
+        <p class="overview__counter-title">Avg. recording duration</p>
+        <h2 class="overview__counter-num today-overview__avg-rec-duration"></h2>
+    </div>
+    
+</div>
+<h2 class="dynamic-title">Recordings - this week (All websites)</h2>
+<div class="title-divider"></div>
+<div class="dyna-list dynamic-loader"></div>
+<div style="display: none" class="dynamic">
+    <div class="dynamic__graph"></div>
+    <div class="dynamic__graph-settings">
+        <div class="dynamic__dropdowns">
+            <select class="dropdown dynamic__dropdown dynamic__metric">
+                <option value="Recordings">Recordings</option>
+                <option value="Views">Views</option>
+                <option value="Avg. recording duration">Avg. recording duration</option>
+                <option value="New countries">New countries</option>
+            </select>
+            <select class="dropdown dynamic__dropdown dynamic__timeframe">
+                <option value="This week">This week</option>
+                <option value="Today">Today</option>
+                <option value="This month">This month</option>
+            </select>
+        </div>
+        <div class="dyna-list dynamic__scope"></div>
+    </div>
+</div>
+<h2 class="total-title">Total</h2>
+<div class="title-divider"></div>
+<div class="dyna-list total-overview-loader"></div>
+<div style="display: none" class="total-overview overview">
+    <div class="overview__counter">
+        <p class="overview__counter-title">Views</p>
+        <h2 class="overview__counter-num total-overview__views">13.5M</h2>
+    </div>
+    <div class="overview__counter">
+        <p class="overview__counter-title">Recordings</p>
+        <h2 class="overview__counter-num total-overview__recordings">12M</h2>
+    </div>
+    <div class="overview__counter">
+        <p class="overview__counter-title">Countries</p>
+        <h2 class="overview__counter-num total-overview__countries">17</h2>
+    </div>
+    <div class="overview__counter">
+        <p class="overview__counter-title">Avg. recording length</p>
+        <h2 class="overview__counter-num total-overview__avg-rec-duration">3 min 18 sec</h2>
+    </div>
+</div>
+<script src="js/dashboard-home.js"></script>

@@ -1,0 +1,80 @@
+.today-title, .dynamic-title, .total-title {
+    margin: 0px;
+}
+
+.today-overview-loader, .dynamic-loader, .total-overview-loader {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.overview__counter {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.overview__counter-num {
+    margin: 0px;
+}
+
+.overview__counter-title {
+    margin: 0px;
+}
+
+.dynamic {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 16px;
+}
+
+.dynamic__graph-settings {
+    width: 100%;
+    aspect-ratio: 2000 / 1000;
+}
+
+@media (max-width: 1100px) {
+    .dynamic {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dynamic__graph-settings {
+        aspect-ratio: unset !important;
+    }
+}
+
+.dynamic__scope {
+    height: 100%;
+}
+
+.apexcharts-tooltip-marker {
+    color: #11aaa2 !important;
+}
+
+.dynamic__dropdowns {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.dynamic__dropdown {
+    flex: 1;
+}
+
+.dynamic__scope-title {
+    margin: 0px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,82 @@
+<link rel="stylesheet" href="css/dashboard-settings-account.css">
+<div class="title-cont">
+    <div class="icon title-cont__back-to-list"><img src="assets/back.webp"></div>
+    <h2 class="title-cont__setting">Settings > Account</h2>
+</div>
+<div class="loader-list-el"></div>
+<div style="display: none" class="account">
+    <h3 class="account__section-title">Email address</h3>
+    <div class="account__credential">
+        <div class="account__credential-info">
+            <span class="account__email"></span>
+        </div>
+        <button class="button account__edit-email account__credential-edit">Edit<img class="account__credential-edit-icon" src="assets/edit.webp"></button>
+    </div>
+    <h3 class="account__section-title">Password</h3>
+    <div class="account__credential">
+        <div class="account__credential-info">
+            <span>••••••••••</span>
+        </div>
+        <button class="button account__edit-password account__credential-edit">Edit<img class="account__credential-edit-icon" src="assets/edit.webp"></button>
+    </div>
+    <h3 class="account__section-title">Delete account</h3>
+    <button class="button account__delete-account">Delete</button>
+    <div style="display: none" class="account__edit-email-form window">
+        <div class="window__close-cont">
+            <div class="window__close account__email-close"><img src="assets/close.webp"></div>
+        </div>
+        <div class="window__inner">
+            <h3 class="window__title">Change email address</h3>
+            <p class="account__email-explanation">A confimation link will be sent to the new email. If you cannot see the email in your inbox, make sure to check your SPAM folder. Open the link to change your current email.</p>
+            <p class="account__email-password-label">Enter password</p>
+            <div class="account__email-password-field password-field">
+                <input name="password" type="password" class="password-field__password account__email-password">
+                <div class="password-field__visibility"><img class="password-field__visibility-icon" draggable="false" src="assets/hide.webp"></div>
+            </div>
+            <p style="display: none" class="account__email-password-error"></p>
+            <p class="account__email-new-label">Enter new email address</p>
+            <input name="email" class="text-field account__email-new">
+            <p style="display: none" class="account__email-new-error"></p>
+            <button class="button account__email-submit">Send confirmation</button>
+        </div>
+    </div>
+    <div style="display: none" class="account__edit-password-form window">
+        <div class="window__close-cont">
+            <div class="window__close account__password-close"><img src="assets/close.webp"></div>
+        </div>
+        <div class="window__inner">
+            <h3 class="window__title">Change password</h3>
+            <p class="account__password-cur-label">Enter current password</p>
+            <div class="account__password-cur-field password-field">
+                <input name="password" type="password" class="password-field__password account__password-cur">
+                <div class="password-field__visibility"><img class="password-field__visibility-icon" draggable="false" src="assets/hide.webp"></div>
+            </div>
+            <p style="display: none" class="account__password-cur-error"></p>
+            <p class="account__password-new-label">Enter new password</p>
+            <div class="account__password-new-field password-field">
+                <input name="password" type="password" class="password-field__password account__password-new">
+                <div class="password-field__visibility"><img class="password-field__visibility-icon" draggable="false" src="assets/hide.webp"></div>
+            </div>
+            <p style="display: none" class="account__password-new-error"></p>
+            <button class="button account__password-submit">Save changes</button>
+        </div>
+    </div>
+    <div style="display: none" class="account__delete-account-form window">
+        <div class="window__close-cont">
+            <div class="window__close account__delete-close"><img src="assets/close.webp"></div>
+        </div>
+        <div class="window__inner">
+            <h3 class="window__title">Delete account</h3>
+            <p class="account__delete-warning">Once an account is scheduled for deletion, it will be permenantly deleted after 30 days of not logging in, simply log in to cancel the deletion process. Enter your password below to schedule deletion.</p>
+            <p class="account__delete-password-label">Enter password</p>
+            <div class="account__delete-password-field password-field">
+                <input name="password" type="password" class="password-field__password account__delete-password">
+                <div class="password-field__visibility"><img class="password-field__visibility-icon" draggable="false" src="assets/hide.webp"></div>
+            </div>
+            <p style="display: none" class="account__delete-error"></p>
+            <button class="button account__delete-submit">Schedule deletion and log out</button>
+        </div>
+    </div>
+</div>
+<script src="js/dashboard-settings-account.js"></script>
+<!--<p>delete form with warning, password input field and button "schedule deletion and log out"</p>-->
