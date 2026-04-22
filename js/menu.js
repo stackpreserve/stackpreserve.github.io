@@ -10,9 +10,9 @@ var communityLinks = document.querySelectorAll(".community-link");
 var year = new Date().getFullYear();
 var menuTitles = {
     "/": `${websiteName} | Watch exactly how your customers react`,
-    "/contact": `Contact - ${websiteName}`,
-    "/terms-and-conditions": `Terms & Conditions - ${websiteName}`,
-    "/privacy-policy": `Privacy Policy - ${websiteName}`
+    "/contact/": `Contact - ${websiteName}`,
+    "/terms-and-conditions/": `Terms & Conditions - ${websiteName}`,
+    "/privacy-policy/": `Privacy Policy - ${websiteName}`
 }
 
 copyrightNotice.innerText = `© ${SPA.websiteName} ${year}`;
