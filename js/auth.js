@@ -14,8 +14,6 @@ if (SPA.sessionId) {
 
 function auth() {
 
-    alert("wuzzup beijing");
-
     var PasswordField = class {
         constructor(element) {
             this.element = element;
@@ -32,13 +30,11 @@ function auth() {
             var showPasswordInput = () => {
                 this.input.type = "text";
                 this.togVisIcon.src = "assets/show.webp";
-                console.log("hello? show");
             }
 
             var hidePasswordInput = () => {
                 this.input.type = "password";
                 this.togVisIcon.src = "assets/hide.webp";
-                console.log("hello? hide");
             }
 
             this.togVisBtn.addEventListener("mousedown", showPasswordInput);
@@ -76,7 +72,7 @@ function auth() {
     var passwordValue;
     var sessionRememberValue;
 
-    if (location.pathname === "/login") {
+    if (location.pathname === "/login/") {
 
         loginSignup();
         var loginError = document.querySelector(".auth-form__login-error");
@@ -106,7 +102,7 @@ function auth() {
             }
         });
 
-    } else if (location.pathname === "/signup") {
+    } else if (location.pathname === "/signup/") {
 
         loginSignup();
         var emailError = document.querySelector(".auth-form__email-error");
@@ -360,7 +356,7 @@ function auth() {
 
         }
 
-    } else if (location.pathname === "/forgot-password") {
+    } else if (location.pathname === "/forgot-password/") {
         var forgotPasswordError = document.querySelector(".auth-form__forgot-error");
         var forgotPasswordForm = document.querySelector(".auth-form__forgot-form");
         var forgotPasswordSuccess = document.querySelector(".auth-form__forgot-success");
