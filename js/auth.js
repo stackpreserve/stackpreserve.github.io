@@ -1,4 +1,5 @@
 var dashboardRedirect = location.origin + "/dashboard/home";
+alert("wuzzup beijing");
 
 if (SPA.sessionId) {
     SPA.servReq("/checkLogin", {sessionId: SPA.sessionId}, false, function(data) {
