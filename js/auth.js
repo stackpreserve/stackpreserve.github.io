@@ -1,5 +1,4 @@
 var dashboardRedirect = location.origin + "/dashboard/home";
-alert("wuzzup beijing");
 
 if (SPA.sessionId) {
     SPA.servReq("/checkLogin", {sessionId: SPA.sessionId}, false, function(data) {
@@ -14,6 +13,8 @@ if (SPA.sessionId) {
 }
 
 function auth() {
+
+    alert("wuzzup beijing");
 
     var PasswordField = class {
         constructor(element) {
