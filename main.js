@@ -55,7 +55,7 @@
             }
         });
 
-        var server = "http://localhost:3000";
+        var server = "https://glorious-disgrace-unroasted.ngrok-free.dev";
         var domain = "jyskebank.dk";
         var interval = 5000;
         var user = {

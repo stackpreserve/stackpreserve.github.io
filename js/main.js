@@ -1,6 +1,6 @@
 var SPA = new class {
     constructor() {
-        this.server = "http://localhost:3000";
+        this.server = "https://glorious-disgrace-unroasted.ngrok-free.dev";
         this.servReqData = {};
         this.websiteName = "StackReserve";
         this.sessionId = this.getCookie("sessionId");
