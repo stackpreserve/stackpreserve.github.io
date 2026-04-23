@@ -32,11 +32,13 @@ function auth() {
             var showPasswordInput = () => {
                 this.input.type = "text";
                 this.togVisIcon.src = "assets/show.webp";
+                console.log("hello? show");
             }
 
             var hidePasswordInput = () => {
                 this.input.type = "password";
                 this.togVisIcon.src = "assets/hide.webp";
+                console.log("hello? hide");
             }
 
             this.togVisBtn.addEventListener("mousedown", showPasswordInput);
