@@ -39,7 +39,7 @@ new PasswordField(editPasswordNewField);
 new PasswordField(deleteAccPasswordField);
 
 backToListBtn.addEventListener("click", async function() {
-    history.replaceState(null, "", "/dashboard/settings");
+    history.replaceState(null, "", "/dashboard/settings/");
     await refreshPage();
 });
 

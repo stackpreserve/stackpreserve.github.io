@@ -1,6 +1,6 @@
 var backToListBtn = document.querySelector(".title-cont__back-to-list");
 
 backToListBtn.addEventListener("click", async function() {
-    history.replaceState(null, "", "/dashboard/settings");
+    history.replaceState(null, "", "/dashboard/settings/");
     await refreshPage();
 });

@@ -7,7 +7,7 @@ var loader = new DynaList(loaderEl, "Couldn't load time format settings", functi
 var currentTimeFormat;
 
 backToListBtn.addEventListener("click", async function() {
-    history.replaceState(null, "", "/dashboard/settings");
+    history.replaceState(null, "", "/dashboard/settings/");
     await refreshPage();
 });
 
