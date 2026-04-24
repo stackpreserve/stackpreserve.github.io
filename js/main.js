@@ -27,13 +27,20 @@ var SPA = new class {
     }
 
     getCookie(name) {
-        var value = `; ${document.cookie}`;
-        var parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return parts.pop().split(";").shift();
+        var encodedName = encodeURIComponent(name) + "=";
+        var cookies = document.cookie.split("; ");
+
+        for (let cookie of cookies) {
+            if (cookie.startsWith(encodedName)) {
+                return decodeURIComponent(cookie.substring(encodedName.length));
+            }
+        }
+
+        return null;
     }
 
     setCookie(name, value) {
-        document.cookie = `${name}=${value}`;
+        document.cookie = `${encodeURIComponent(name)}=${encodeURIComponent(value)}; path=/`;
     }
 
     removeCookie(name) {
