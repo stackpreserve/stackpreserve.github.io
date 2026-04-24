@@ -2,7 +2,7 @@ var SPA = new class {
     constructor() {
         this.server = "https://glorious-disgrace-unroasted.ngrok-free.dev";
         this.servReqData = {};
-        this.websiteName = "StackReserve";
+        this.websiteName = "StackPreserve";
         this.sessionId = this.getCookie("sessionId");
         this.pages = {
             "/": ["/partials/home.html", "/partials/menu.html"],

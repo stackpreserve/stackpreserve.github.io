@@ -1,12 +1,12 @@
-var authRedirect = location.origin + "/login";
+var authRedirect = location.origin + "/login/";
 var homeRedirect = location.origin + "/";
 
+alert("dashboard", SPA.sessionId);
 if (!SPA.sessionId) {
     location.href = authRedirect;
 }
 
 var menuLoaded = true;
-var websiteName = "SiteScope";
 var mobileMaxWidth = 760;
 var mobileChanges = [];
 var desktopChanges = [];
@@ -20,24 +20,24 @@ var confirmationMessageText = document.querySelector(".confirmation-message__tex
 var confirmationMessageOpen = false;
 var confirmationMessageExpire = 0;
 var dashboardTitles = {
-    "/dashboard/home": "Home",
-    "/dashboard/recordings": "Recordings",
-    "/dashboard/users": "Users",
-    "/dashboard/websites": "Websites",
-    "/dashboard/settings": "Settings",
-    "/dashboard/settings/account": "Account",
-    "/dashboard/settings/time-format": "Time format",
-    "/dashboard/settings/legal": "Legal"
+    "/dashboard/home/": "Home",
+    "/dashboard/recordings/": "Recordings",
+    "/dashboard/users/": "Users",
+    "/dashboard/websites/": "Websites",
+    "/dashboard/settings/": "Settings",
+    "/dashboard/settings/account/": "Account",
+    "/dashboard/settings/time-format/": "Time format",
+    "/dashboard/settings/legal/": "Legal"
 }
 var searchSuggestions = [
-    {title: "Home", url: "/dashboard/home"},
-    {title: "Recordings", url: "/dashboard/recordings"},
-    {title: "Users", url: "/dashboard/users"},
-    {title: "Websites", url: "/dashboard/websites"},
-    {title: "Settings", url: "/dashboard/settings"},
-    {title: "Settings > Account", url: "/dashboard/settings/account"},
-    {title: "Settings > Time format", url: "/dashboard/settings/time-format"},
-    {title: "Settings > Legal", url: "/dashboard/settings/legal"}
+    {title: "Home", url: "/dashboard/home/"},
+    {title: "Recordings", url: "/dashboard/recordings/"},
+    {title: "Users", url: "/dashboard/users/"},
+    {title: "Websites", url: "/dashboard/websites/"},
+    {title: "Settings", url: "/dashboard/settings/"},
+    {title: "Settings > Account", url: "/dashboard/settings/account/"},
+    {title: "Settings > Time format", url: "/dashboard/settings/time-format/"},
+    {title: "Settings > Legal", url: "/dashboard/settings/legal/"}
 ];
 var cover = new class {
     constructor() {
