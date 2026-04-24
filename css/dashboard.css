@@ -706,6 +706,7 @@ img {
     z-index: 2;
     max-width: 280px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .community-menu__title {
