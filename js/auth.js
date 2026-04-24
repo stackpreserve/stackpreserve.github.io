@@ -1,6 +1,6 @@
 var dashboardRedirect = location.origin + "/dashboard/home/";
 
-alert("auth " + SPA.sessionId);
+alert("auth " + SPA.sessionId + " " + SPA.getCookie("sessionId"));
 if (SPA.sessionId) {
     SPA.servReq("/checkLogin", {sessionId: SPA.sessionId}, false, function(data) {
         if (data.loggedIn) {
