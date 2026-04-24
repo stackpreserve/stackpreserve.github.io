@@ -655,8 +655,8 @@ function handleCommunityBtn() {
     function positionCommunityMenu() {
         var communityBtnRect = communityBtn.getBoundingClientRect();
         var communityMenuRect = hiddenElRect(communityMenu);
-        if (communityBtnRect.left < communityMenuRect.width - communityBtnRect.width - 10) {
-            communityMenu.style.left = "10px";
+        if (communityBtnRect.left < communityMenuRect.width - communityBtnRect.width) {
+            communityMenu.style.left = "0px";
         } else {
             communityMenu.style.left = communityBtnRect.left - communityMenuRect.width + communityBtnRect.width + "px";
         }
