@@ -1,7 +1,6 @@
 var authRedirect = location.origin + "/login/";
 var homeRedirect = location.origin + "/";
 
-alert("dashboard " + SPA.sessionId + " " + SPA.getCookie("sessionId"));
 if (!SPA.sessionId) {
     location.href = authRedirect;
 }
