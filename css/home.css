@@ -26,8 +26,10 @@
     display: inline-block;
 }
 
-.product__signup:hover {
-    background-color: #12c1b8;
+@media (hover: hover) and (pointer: fine) {
+    .product__signup:hover {
+        background-color: #12c1b8;
+    }
 }
 
 .product__left {
@@ -172,8 +174,10 @@
     transition: background-color 0.2s ease;
 }
 
-.community__join:hover {
-    background-color: #222222;
+@media (hover: hover) and (pointer: fine) {
+    .community__join:hover {
+        background-color: #222222;
+    }
 }
 
 @media (max-width: 860px) {

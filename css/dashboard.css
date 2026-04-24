@@ -835,9 +835,11 @@ img {
     padding: 3px;
 }
 
-.search-suggestions > p:hover {
-    background-color: #dadada;
-    cursor: pointer;
+@media (hover: hover) and (pointer: fine) {
+    .search-suggestions > p:hover {
+        background-color: #dadada;
+        cursor: pointer;
+    }
 }
 
 .search-suggestions .selected {

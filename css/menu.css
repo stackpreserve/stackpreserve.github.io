@@ -75,8 +75,10 @@ body {
     transition: background-color 0.2s ease;
 }
 
-.nav-bar__link:hover {
-    background-color: #dadada;
+@media (hover: hover) and (pointer: fine) {
+    .nav-bar__link:hover {
+        background-color: #dadada;
+    }
 }
 
 .nav-bar__link p {
@@ -108,18 +110,20 @@ body {
 .nav-bar__contact {
     color: #000000;
 }
-
-.nav-bar__contact:hover {
-    background-color: #dadada;
+@media (hover: hover) and (pointer: fine) {
+    .nav-bar__contact:hover {
+        background-color: #dadada;
+    }
 }
 
 .nav-bar__login {
     background-color: #ededed;
     color: #000000;
 }
-
-.nav-bar__login:hover {
-    background-color: #d1d1d1;
+@media (hover: hover) and (pointer: fine) {
+    .nav-bar__login:hover {
+        background-color: #d1d1d1;
+    }
 }
 
 .nav-bar__signup {
@@ -127,8 +131,10 @@ body {
     color: #ffffff;
 }
 
-.nav-bar__signup:hover {
-    background-color: #222222;
+@media (hover: hover) and (pointer: fine) {
+    .nav-bar__signup:hover {
+        background-color: #222222;
+    }
 }
 
 .nav-bar__mobile-inner {
@@ -154,8 +160,10 @@ body {
     transition: background-color 0.2s ease;
 }
 
-.icon:hover {
-    background-color: #dadada;
+@media (hover: hover) and (pointer: fine) {
+    .icon:hover {
+        background-color: #dadada;
+    }
 }
 
 .cover {
@@ -216,8 +224,10 @@ body {
     transition: background-color 0.2s ease;
 }
 
-.menu__link:hover {
-    background-color: #dadada;
+@media (hover: hover) and (pointer: fine) {
+    .menu__link:hover {
+        background-color: #dadada;
+    }
 }
 
 .menu__link p {
@@ -251,8 +261,10 @@ body {
     color: #000000;
 }
 
-.menu__contact:hover {
-    background-color: #dadada;
+@media (hover: hover) and (pointer: fine) {
+    .menu__contact:hover {
+        background-color: #dadada;
+    }
 }
 
 .menu__login {
@@ -261,8 +273,10 @@ body {
     color: #000000;
 }
 
-.menu__login:hover {
-    background-color: #d1d1d1;
+@media (hover: hover) and (pointer: fine) {
+    .menu__login:hover {
+        background-color: #d1d1d1;
+    }
 }
 
 .menu__signup {
@@ -271,8 +285,10 @@ body {
     color: #ffffff;
 }
 
-.menu__signup:hover {
-    background-color: #464646;
+@media (hover: hover) and (pointer: fine) {
+    .menu__signup:hover {
+        background-color: #464646;
+    }
 }
 
 .page {
@@ -312,8 +328,10 @@ body {
     color: #4f4f4f;
 }
 
-.footer__link a:hover {
-    color: #000000;
-    cursor: pointer;
-    user-select: none;
+@media (hover: hover) and (pointer: fine) {
+    .footer__link a:hover {
+        color: #000000;
+        cursor: pointer;
+        user-select: none;
+    }
 }
