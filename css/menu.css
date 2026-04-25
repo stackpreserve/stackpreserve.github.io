@@ -1,6 +1,11 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0px;
     max-width: 100%;
+    min-height: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
