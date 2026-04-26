@@ -17,11 +17,13 @@
         <div class="auth-form__credentials">
             <p class="auth-form__label">Email</p>
             <input name="email" class="text-field auth-form__email">
+            <p style="display: none;" class="auth-form__email-error"></p>
             <p class="auth-form__label">Password</p>
             <div class="auth-form__password-field password-field">
                 <input name="password" type="password" class="password-field__password auth-form__password">
                 <div class="password-field__visibility"><img class="password-field__visibility-icon" draggable="false" src="assets/hide.webp"></div>
             </div>
+            <p style="display: none;" class="auth-form__password-error"></p>
             <div class="auth-form__options">
                 <div class="auth-form__remember">
                     <p>Remember me</p>

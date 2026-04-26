@@ -78,7 +78,10 @@ function auth() {
         var loginError = document.querySelector(".auth-form__login-error");
 
         submitAuth.addEventListener("click", function() {
-            
+
+            emailError.style.display = "none";
+            passwordError.style.display = "none";
+
             function emailErrorMsg(msg) {
                 emailError.style.display = "";
                 emailError.innerText = msg;
@@ -88,6 +91,12 @@ function auth() {
             function pwErrorMsg(msg) {
                 passwordError.style.display = "";
                 passwordError.innerText = msg;
+                submitAuth.disabled = false;
+            }
+
+            function loginErrorMsg(msg) {
+                loginError.style.display = "";
+                loginError.innerText = msg;
                 submitAuth.disabled = false;
             }
 
@@ -112,9 +121,7 @@ function auth() {
                     SPA.setCookie("sessionId", data.sessionId);
                     location.href = dashboardRedirect;
                 } else {
-                    loginError.style.display = "";
-                    loginError.innerText = data.error;
-                    submitAuth.disabled = false;
+                    loginErrorMsg(data.error)
                 }
             });
         });
