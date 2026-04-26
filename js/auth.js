@@ -75,6 +75,8 @@ function auth() {
     if (location.pathname === "/login/") {
 
         loginSignup();
+        var emailError = document.querySelector(".auth-form__email-error");
+        var passwordError = document.querySelector(".auth-form__password-error");
         var loginError = document.querySelector(".auth-form__login-error");
 
         submitAuth.addEventListener("click", function() {
