@@ -26,9 +26,11 @@ submitBtn.addEventListener("click", function() {
     SPA.servReq("/changeTimeFormat", {
         sessionId: SPA.sessionId,
         timeFormat: timeFormatInputValue
-    }, false, function() {
-        SPA.openConfirmationMessage(true, "Time format changed");
-        currentTimeFormat = timeFormatInputValue;
+    }, false, function(data) {
+        if (data.success) {
+            SPA.openConfirmationMessage(true, "Time format changed");
+            currentTimeFormat = timeFormatInputValue;
+        }
     });
 });
 

@@ -141,6 +141,7 @@ editEmailSubmitBtn.addEventListener("click", function() {
         } else if (data.error === "Email already in use") {
             editEmailNewErrorMsg(data.error);
         }
+        editEmailSubmitBtn.disabled = false;
     });
 });
 editEmailBtn.addEventListener("click", openEditEmailForm);

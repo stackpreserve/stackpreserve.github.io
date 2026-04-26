@@ -183,6 +183,7 @@ function showWebsiteDetails() {
                 closeDeleteWebsiteForm();
                 await refreshPage();
             }
+            deleteWebsiteSubmitBtn.disabled = false;
         });
     });
 
