@@ -48,13 +48,11 @@ var SPA = new class {
             <img class="confirmation-message__icon" src="assets/error.webp">
             <p class="confirmation-message__text"></p>
         `;
-        this.confirmationMessageIcon = document.querySelector(".confirmation-message__icon");
-        this.confirmationMessageText = document.querySelector(".confirmation-message__text");
         this.confirmationMessageOpen = false;
         this.confirmationMessageExpire = 0;
-        this.confirmationMessageInserted = false;
+        this.confirmationMessageInstalled = false;
         setInterval(() => {
-            if (this.confirmationMessageOpen) {
+            if (this.confirmationMessageOpen && this.confirmationMessageInstalled) {
                 if (Date.now() > this.confirmationMessageExpire) {
                     this.confirmationMessageOpen = false;
                     this.confirmationMessage.style.animationName = "confirmationMessageClose";
@@ -81,6 +79,16 @@ var SPA = new class {
             "/signup/": ["/partials/signup.html"]
         }
         this.start();
+    }
+
+    installConfirmationMessage() {
+        if (!this.confirmationMessageInstalled) {
+            document.head.appendChild(this.confirmationMessageStyles);
+            document.body.appendChild(this.confirmationMessage);
+            this.confirmationMessageIcon = document.querySelector(".confirmation-message__icon");
+            this.confirmationMessageText = document.querySelector(".confirmation-message__text");
+            this.confirmationMessageInstalled = true;
+        }
     }
 
     openConfirmationMessage(status, message) {
@@ -142,7 +150,7 @@ var SPA = new class {
                 callback(data);
             }).catch(err => {
                 console.log(err);
-                openConfirmationMessage(false, "Cannot connect to server, try again later.")
+                this.openConfirmationMessage(false, "Cannot connect to server, try again later.");
             });
         }
     }
@@ -195,16 +203,14 @@ var SPA = new class {
                     if (content && window.hasOwnProperty("menuLoaded")) {
                         clearInterval(checkContent);
                         content.innerHTML = page;
+                        this.installConfirmationMessage();
                         runScripts(content);
-                        document.head.appendChild(this.confirmationMessageStyles);
-                        document.body.appendChild(this.confirmationMessage);
                     }
                 }, 0);
             } else {
                 page = await fetchHTML(page);
                 document.write(page);
-                document.head.appendChild(this.confirmationMessageStyles);
-                document.body.appendChild(this.confirmationMessage);
+                this.installConfirmationMessage();
             }
 
         }
