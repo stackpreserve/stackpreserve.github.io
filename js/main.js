@@ -5,53 +5,54 @@ var SPA = new class {
         this.websiteName = "StackPreserve";
         this.sessionId = this.getCookie("sessionId");
         this.confirmationMessage = document.createElement("div");
+        this.confirmationMessageStyles = document.createElement("style");
         this.confirmationMessage.classList.add("confirmation-message");
+        this.confirmationMessageStyles.textContent = `
+            .confirmation-message {
+                width: fit-content;
+                padding: 10px;
+                position: absolute;
+                left: 50%;
+                top: 0;
+                transform: translate(-50%, -120%);
+                display: flex;
+                align-items: center;
+                border-radius: 5px;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+                z-index: 2;
+            }
+
+            .confirmation-message__text {
+                color: #ffffff;
+                margin: 0px;
+                font-size: 14px;
+            }
+
+            .confirmation-message__icon {
+                width: 14px;
+                margin-right: 5px;
+            }
+
+            @keyframes confirmationMessageOpen {
+                from { transform: translate(-50%, -120%); }
+                to { transform: translate(-50%, 10px); }
+            }
+
+            @keyframes confirmationMessageClose {
+                from { transform: translate(-50%, 10px); }
+                to { transform: translate(-50%, -120%); }
+            }
+        `;
         this.confirmationMessage.innerHTML = `
-            <style>
-                .confirmation-message {
-                    width: fit-content;
-                    padding: 10px;
-                    position: absolute;
-                    left: 50%;
-                    top: 0;
-                    transform: translate(-50%, -120%);
-                    display: flex;
-                    align-items: center;
-                    border-radius: 5px;
-                    animation-duration: 0.5s;
-                    animation-fill-mode: forwards;
-                    z-index: 2;
-                }
-
-                .confirmation-message__text {
-                    color: #ffffff;
-                    margin: 0px;
-                    font-size: 14px;
-                }
-
-                .confirmation-message__icon {
-                    width: 14px;
-                    margin-right: 5px;
-                }
-
-                @keyframes confirmationMessageOpen {
-                    from { transform: translate(-50%, -120%); }
-                    to { transform: translate(-50%, 10px); }
-                }
-
-                @keyframes confirmationMessageClose {
-                    from { transform: translate(-50%, 10px); }
-                    to { transform: translate(-50%, -120%); }
-                }
-            </style>
             <img class="confirmation-message__icon" src="assets/error.webp">
             <p class="confirmation-message__text"></p>
         `;
-        document.body.appendChild(this.confirmationMessage);
         this.confirmationMessageIcon = document.querySelector(".confirmation-message__icon");
         this.confirmationMessageText = document.querySelector(".confirmation-message__text");
         this.confirmationMessageOpen = false;
         this.confirmationMessageExpire = 0;
+        this.confirmationMessageInserted = false;
         setInterval(() => {
             if (this.confirmationMessageOpen) {
                 if (Date.now() > this.confirmationMessageExpire) {
@@ -162,7 +163,7 @@ var SPA = new class {
     start() {
         var path = location.pathname;
 
-        async function loadPage(page, menu) {
+        var loadPage = async (page, menu) => {
 
             async function fetchHTML(path) {
                 var res = await fetch(path, {cache: "force-cache"});
@@ -195,11 +196,15 @@ var SPA = new class {
                         clearInterval(checkContent);
                         content.innerHTML = page;
                         runScripts(content);
+                        document.head.appendChild(this.confirmationMessageStyles);
+                        document.body.appendChild(this.confirmationMessage);
                     }
                 }, 0);
             } else {
                 page = await fetchHTML(page);
                 document.write(page);
+                document.head.appendChild(this.confirmationMessageStyles);
+                document.body.appendChild(this.confirmationMessage);
             }
 
         }
