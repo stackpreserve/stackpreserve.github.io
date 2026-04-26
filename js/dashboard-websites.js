@@ -166,7 +166,7 @@ function showWebsiteDetails() {
                 domainTitle.innerText = domain;
                 setWebsiteParam(domain);
                 closeEditDomainForm();
-            } else if (data.error === "Domain already in use") {
+            } else if (data.error) {
                 errorMsg(data.error);
             }
         });
@@ -289,7 +289,7 @@ function showWebsiteList() {
                 closeWebsiteForm();
                 setWebsiteParam(addWebsiteInput.value)
                 await refreshPage();
-            } else if (data.error === "Domain already in use") {
+            } else if (data.error) {
                 errorMsg(data.error);
             }
         });
