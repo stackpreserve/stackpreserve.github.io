@@ -131,6 +131,7 @@ function auth() {
                 } else {
                     loginErrorMsg(data.error)
                 }
+                submitAuth.disabled = false;
             });
         });
 
@@ -220,6 +221,7 @@ function auth() {
                 } else {
                     verifyEmail();
                 }
+                submitAuth.disabled = false;
             });
 
         });
@@ -389,6 +391,7 @@ function auth() {
                         SPA.setCookie("firstLogin", true);
                         location.href = dashboardRedirect;
                     }
+                    verifyCodeBtn.disabled = false;
                 });
             });
 
@@ -432,6 +435,7 @@ function auth() {
                     forgotPasswordSuccess.style.display = "";
                     forgotPasswordSuccessEmail.innerText = emailValue;
                 }
+                submitAuth.disabled = false;
             });
         });
     }
