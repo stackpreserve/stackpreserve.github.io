@@ -16,7 +16,7 @@
     100%{background-size: 20% 100%,20% 100%,20% 100%}
 }
 
-.confirmation-message {
+/*.confirmation-message {
     width: fit-content;
     padding: 10px;
     position: absolute;
@@ -50,7 +50,7 @@
 @keyframes confirmationMessageClose {
     from { transform: translate(-50%, 10px); }
     to { transform: translate(-50%, -120%); }
-}
+}*/
 
 .dropdown {
     background-color: #ffffff;

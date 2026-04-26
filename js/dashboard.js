@@ -13,11 +13,11 @@ var platform = "desktop";
 var page = document.querySelector(".page");
 var lastPath = null;
 var lastHTML = null;
-var confirmationMessage = document.querySelector(".confirmation-message");
+/*var confirmationMessage = document.querySelector(".confirmation-message");
 var confirmationMessageIcon = document.querySelector(".confirmation-message__icon");
 var confirmationMessageText = document.querySelector(".confirmation-message__text");
 var confirmationMessageOpen = false;
-var confirmationMessageExpire = 0;
+var confirmationMessageExpire = 0;*/
 var dashboardTitles = {
     "/dashboard/home/": "Home",
     "/dashboard/recordings/": "Recordings",
@@ -51,14 +51,14 @@ var cover = new class {
     }
 };
 
-setInterval(function() {
+/*setInterval(function() {
     if (confirmationMessageOpen) {
         if (Date.now() > confirmationMessageExpire) {
             confirmationMessageOpen = false;
             confirmationMessage.style.animationName = "confirmationMessageClose";
         }
     }
-}, 0);
+}, 0);*/
 
 function checkRes() {
     if (window.innerWidth > mobileMaxWidth && platform == "mobile") {
@@ -89,7 +89,7 @@ function hiddenElRect(el) {
     return rect;
 }
 
-function openConfirmationMessage(status, message) {
+/*function openConfirmationMessage(status, message) {
     if (status) {
         confirmationMessage.style.backgroundColor = "#8ea638";
         confirmationMessageIcon.src = "assets/success.webp";
@@ -103,7 +103,7 @@ function openConfirmationMessage(status, message) {
     confirmationMessageExpire = Date.now() + 3000;
     confirmationMessageOpen = true;
 
-}
+}*/
 
 function to24h(timeStr) {
     var match = timeStr.trim().match(/^(\d{1,2})(?::(\d{2}))?\s*(AM|PM)$/i);
