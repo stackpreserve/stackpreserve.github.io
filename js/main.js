@@ -11,7 +11,7 @@ var SPA = new class {
             .confirmation-message {
                 width: fit-content;
                 padding: 10px;
-                position: absolute;
+                position: fixed;
                 left: 50%;
                 top: 0;
                 transform: translate(-50%, -120%);
