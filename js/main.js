@@ -1,5 +1,6 @@
 var SPA = new class {
     constructor() {
+        this.version = 1
         this.server = "https://glorious-disgrace-unroasted.ngrok-free.dev";
         this.servReqData = {};
         this.websiteName = "StackPreserve";
@@ -173,8 +174,8 @@ var SPA = new class {
 
         var loadPage = async (page, menu) => {
 
-            async function fetchHTML(path) {
-                var res = await fetch(path, {cache: "force-cache"});
+            var fetchHTML = async (path) => {
+                var res = await fetch(`${path}?v=${this.version}`, {cache: "force-cache"});
                 return res.text();
             }
             
