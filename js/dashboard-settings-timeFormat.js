@@ -27,7 +27,7 @@ submitBtn.addEventListener("click", function() {
         sessionId: SPA.sessionId,
         timeFormat: timeFormatInputValue
     }, false, function() {
-        openConfirmationMessage(true, "Time format changed");
+        SPA.openConfirmationMessage(true, "Time format changed");
         currentTimeFormat = timeFormatInputValue;
     });
 });

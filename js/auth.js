@@ -78,7 +78,30 @@ function auth() {
         var loginError = document.querySelector(".auth-form__login-error");
 
         submitAuth.addEventListener("click", function() {
+            
+            function emailErrorMsg(msg) {
+                emailError.style.display = "";
+                emailError.innerText = msg;
+                submitAuth.disabled = false;
+            }
+
+            function pwErrorMsg(msg) {
+                passwordError.style.display = "";
+                passwordError.innerText = msg;
+                submitAuth.disabled = false;
+            }
+
             submitAuth.disabled = true;
+
+            if (emailInput.value === "") {
+                emailErrorMsg("You must enter your email");
+                return;
+            }
+
+            if (passwordInput.value === "") {
+                pwErrorMsg("You must enter your password");
+                return;
+            }
 
             SPA.servReq("/loginReq", {
                 email: emailInput.value,
@@ -132,16 +155,6 @@ function auth() {
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(emailInput.value)) {
                 emailErrorMsg("Email is invalid");
-                return;
-            }
-
-            if (emailInput.value === "") {
-                emailErrorMsg("You must enter an email");
-                return;
-            }
-
-            if (passwordInput.value === "") {
-                pwErrorMsg("You must enter a password");
                 return;
             }
 

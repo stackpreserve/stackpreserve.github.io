@@ -135,7 +135,7 @@ editEmailSubmitBtn.addEventListener("click", function() {
     }, false, async function(data) {
         if (data.success) {
             closeEditEmailForm();
-            openConfirmationMessage(true, "Confirmation email sent");
+            SPA.openConfirmationMessage(true, "Confirmation email sent");
         } else if (data.error === "Incorrect password") {
             editEmailPasswordErrorMsg(data.error);
         } else if (data.error === "Email already in use") {
@@ -204,7 +204,7 @@ editPasswordSubmitBtn.addEventListener("click", function() {
     }, false, async function(data) {
         if (data.success) {
             closeEditPasswordForm();
-            openConfirmationMessage(true, "Password changed");
+            SPA.openConfirmationMessage(true, "Password changed");
         } else if (data.error === "Incorrect password") {
             editPasswordCurErrorMsg("Incorrect password");
         }
