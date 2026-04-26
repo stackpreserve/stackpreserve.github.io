@@ -109,6 +109,12 @@ function auth() {
                 return;
             }
 
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value)) {
+                emailErrorMsg("Email is invalid");
+                return;
+            }
+
             if (passwordInput.value === "") {
                 pwErrorMsg("You must enter your password");
                 return;
@@ -161,9 +167,19 @@ function auth() {
 
             submitAuth.disabled = true;
 
+            if (emailInput.value === "") {
+                emailErrorMsg("You must enter an email");
+                return;
+            }
+
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(emailInput.value)) {
                 emailErrorMsg("Email is invalid");
+                return;
+            }
+
+            if (passwordInput.value === "") {
+                pwErrorMsg("You must enter a password");
                 return;
             }
 

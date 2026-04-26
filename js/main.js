@@ -1,6 +1,6 @@
 var SPA = new class {
     constructor() {
-        this.version = 1
+        this.version = 1;
         this.server = "https://glorious-disgrace-unroasted.ngrok-free.dev";
         this.servReqData = {};
         this.websiteName = "StackPreserve";
