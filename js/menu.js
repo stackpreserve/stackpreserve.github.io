@@ -1,5 +1,4 @@
 var menuLoaded = true;
-var websiteName = "StackPreserve";
 var menu = document.querySelector(".menu");
 var menuBtn = document.querySelector(".nav-bar__menu-btn");
 var closeMenuBtn = document.querySelector(".menu__close");
@@ -9,10 +8,10 @@ var howItWorksLinks = document.querySelectorAll(".how-it-works-link");
 var communityLinks = document.querySelectorAll(".community-link");
 var year = new Date().getFullYear();
 var menuTitles = {
-    "/": `${websiteName} | Watch exactly how your customers react`,
-    "/contact/": `Contact - ${websiteName}`,
-    "/terms-and-conditions/": `Terms & Conditions - ${websiteName}`,
-    "/privacy-policy/": `Privacy Policy - ${websiteName}`
+    "/": `${SPA.websiteName} | Watch exactly how your customers react`,
+    "/contact/": `Contact - ${SPA.websiteName}`,
+    "/terms-and-conditions/": `Terms & Conditions - ${SPA.websiteName}`,
+    "/privacy-policy/": `Privacy Policy - ${SPA.websiteName}`
 }
 
 copyrightNotice.innerText = `© ${SPA.websiteName} ${year}`;
