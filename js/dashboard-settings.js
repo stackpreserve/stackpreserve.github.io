@@ -1,11 +1,1 @@
-var settingsCards = document.querySelectorAll(".settings-gallery__card");
-
-settingsCards.forEach(function(card) {
-    card.addEventListener("click", async function() {
-        var hrefAttr = this.getAttribute("href");
-        if (hrefAttr !== location.pathname) {
-            history.pushState(null, "", hrefAttr);
-            await refreshPage();
-        }
-    });
-})
+var settingsCards=document.querySelectorAll(".settings-gallery__card");settingsCards.forEach(function(t){t.addEventListener("click",async function(){var t=this.getAttribute("href");t!==location.pathname&&(history.pushState(null,"",t),await refreshPage())})});
