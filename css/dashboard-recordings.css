@@ -67,9 +67,9 @@
     background: #11aaa2 !important;
 }
 
-.rr-player .rr-player__frame {
+/*.rr-player .rr-player__frame {
     background-color: #000000;
-}
+}*/
 
 .rr-controller__btns button:not(:last-child) {
     margin-right: 5px;
