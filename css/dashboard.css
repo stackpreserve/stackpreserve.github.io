@@ -547,6 +547,7 @@ img {
 .menu__logo {
     width: 100px;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .menu__line {
