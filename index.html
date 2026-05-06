@@ -3,17 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StackPreserve</title>
-    <base href="https://stackpreserve.com">
-    <meta name="description" content="Watch exactly how your customers react. Session replay built for indie developers. See every click, scroll, and interaction to understand what works, what confuses users, and where they drop off, all without complex setup.">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="StackPreserve">
-    <meta property="og:description" content="Watch exactly how your customers react. Session replay built for indie developers. See every click, scroll, and interaction to understand what works, what confuses users, and where they drop off, all without complex setup.">
-    <meta property="og:url" content="https://stackpreserve.com">
+    <title>StackPreserve | Watch exactly how your customers react</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="StackPreserve is a session replay tool built for indie developers. See every click, scroll, and interaction to understand what works, what confuses users, and where they drop off. No complex setup required.">
+    <meta name="keywords" content="session replay, user recordings, indie developer tools, website analytics, click tracking, scroll tracking, user behavior, session recording, heatmap, ux analytics">
+    <meta name="author" content="StackPreserve">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Language -->
+    <meta http-equiv="content-language" content="en">
+    <link rel="alternate" hreflang="en" href="https://stackpreserve.com/">
+
+    <!-- Mobile / Brand -->
+    <meta name="theme-color" content="#11aaa2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="StackPreserve">
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <link rel="canonical" href="https://stackpreserve.com">
+    <meta property="og:url" content="https://stackpreserve.com/">
+    <meta property="og:title" content="StackPreserve | Watch exactly how your customers react">
+    <meta property="og:description" content="Session replay built for indie developers. See every click, scroll, and interaction. No complex setup.">
+    <meta property="og:image" content="https://stackpreserve.com/og-image.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="StackPreserve">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="StackPreserve | Watch exactly how your customers react">
+    <meta name="twitter:description" content="Session replay built for indie developers. See every click, scroll, and interaction. No complex setup.">
+    <meta name="twitter:image" content="https://stackpreserve.com/og-image.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://stackpreserve.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+
+    <!-- Schema: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "StackPreserve",
+      "url": "https://stackpreserve.com",
+      "description": "Session replay tool built for indie developers. See every click, scroll, and interaction to understand what works, what confuses users, and where they drop off.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free during early access"
+      },
+      "featureList": [
+        "Session replay",
+        "Click tracking",
+        "Scroll tracking",
+        "User behavior analytics",
+        "No complex setup"
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/home.css">
     <script src="js/main.js"></script>
 </head>
 <body>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rrweb-player@latest/dist/style.css">
+<script src="https://cdn.jsdelivr.net/npm/rrweb-player@latest/dist/index.js"></script>
+
+<!-- cover overlay -->
+<div class="cover" style="display:none;"></div>
+
+<!-- mobile slide-in menu -->
+<div class="menu">
+    <img class="menu__close icon" src="assets/back.webp">
+    <ul class="menu__links">
+        <li class="menu__link"><a href="/product"><p>Product</p></a></li>
+        <li class="menu__link"><a class="how-it-works-link"><p>How it works</p></a></li>
+        <li class="menu__link"><a class="community-link"><p>Community</p></a></li>
+    </ul>
+    <div class="menu__divider"></div>
+    <div class="menu__bottom">
+        <a class="menu__contact right-bottom-btn" href="/contact"><p>Contact</p></a>
+        <a class="menu__login right-bottom-btn" href="/login"><p>Log in</p></a>
+        <a class="menu__signup right-bottom-btn" href="/signup"><p>Get started</p></a>
+    </div>
+</div>
+
+<!-- nav -->
+<nav class="nav-bar">
+    <div class="nav-bar__inner">
+        <div class="nav-bar__left">
+            <a class="nav-bar__logo-link" href="/"><img class="nav-bar__logo" src="assets/logoLong.png"></a>
+            <ul class="nav-bar__links">
+                <li class="nav-bar__link"><a href="/product">Product</a></li>
+                <li class="nav-bar__link"><a class="how-it-works-link">How it works</a></li>
+                <li class="nav-bar__link"><a class="community-link">Community</a></li>
+            </ul>
+        </div>
+        <div class="nav-bar__right">
+            <a class="btn btn--ghost" href="/contact">Contact</a>
+            <a class="btn btn--muted" href="/login">Log in</a>
+            <a class="btn btn--primary" href="/signup">Get started</a>
+        </div>
+    </div>
+    <div class="nav-bar__mobile-inner">
+        <a class="nav-bar__logo-link" href="/"><img class="nav-bar__logo" src="assets/logoLong.png"></a>
+        <img class="nav-bar__menu-btn icon" src="assets/menu.webp">
+    </div>
+</nav>
+
+<!-- hero -->
+<section class="hero">
+    <div class="hero__left">
+        <div class="hero__eyebrow">
+            <span class="hero__eyebrow-dot"></span>
+            Free during early access
+        </div>
+        <h1 class="hero__title">Watch exactly how your<br><em>customers react</em></h1>
+        <p class="hero__subtitle">Session replay built for indie developers. See every click, scroll, and interaction. Understand what works, what confuses, and where users drop off.</p>
+        <div class="hero__ctas">
+            <a class="btn btn--teal btn--hero" href="/signup/">Start recording in seconds</a>
+            <a class="btn btn--ghost btn--hero how-it-works-link">See how it works →</a>
+        </div>
+        <div class="hero__social-proof">
+            <div class="hero__avatars">
+                <div class="hero__avatar hero__avatars-a">AK</div>
+                <div class="hero__avatar hero__avatars-b">MR</div>
+                <div class="hero__avatar hero__avatars-c">JL</div>
+                <div class="hero__avatar hero__avatars-d">SC</div>
+            </div>
+            <p class="hero__proof-text"><strong>No complex setup.</strong> Add one script tag &amp; you're done.</p>
+        </div>
+    </div>
+    <div class="hero__right">
+        <div class="ignore-element-stackpreserve" id="player"></div>
+    </div>
+</section>
+
+<!-- how it works -->
+<section class="how-it-works">
+    <div class="how-it-works__text-col reveal">
+        <p class="section-eyebrow">How it works</p>
+        <h2 class="section-title how-it-works-scroll">Up and running in under a minute</h2>
+        <p class="section-body">No SDKs, no complex configs. Just drop a script tag on your site, enter your domain, and we start capturing sessions automatically.</p>
+        <div class="steps">
+            <div class="step">
+                <div class="step__num">1</div>
+                <div class="step__content">
+                    <p class="step__title">Add the script tag</p>
+                    <p class="step__desc">One line of HTML added to your site's &lt;head&gt;. That's the entire integration.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step__num">2</div>
+                <div class="step__content">
+                    <p class="step__title">Register your domain</p>
+                    <p class="step__desc">Enter your site URL in the dashboard. We'll start recording immediately.</p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step__num">3</div>
+                <div class="step__content">
+                    <p class="step__title">Watch real sessions</p>
+                    <p class="step__desc">See exactly how visitors use your site, every click, scroll, and drop-off, replayed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="how-it-works__img-col reveal">
+        <img class="how-it-works__img" src="assets/script.png">
+    </div>
+</section>
+
+<!-- community -->
+<section class="community">
+    <div class="community__inner reveal">
+        <h2 class="community__title community-scroll">Join our community on Discord</h2>
+        <p class="community__text">Get support, share feedback, and stay in the loop on what's coming next.</p>
+        <a class="btn--discord" href="https://discord.gg/SkRndSzxV8" target="_blank" rel="noopener noreferrer">
+            <svg width="24px" height="24px" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="#ffffff" fill-rule="nonzero"> </path> </g> </g></svg>
+            Join Discord server
+        </a>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+    <ul class="footer__links">
+        <li class="footer__link"><a href="/product">Product</a></li>
+        <li class="footer__link"><a class="how-it-works-link">How it works</a></li>
+        <li class="footer__link"><a class="community-link">Community</a></li>
+        <li class="footer__link"><a href="/contact/">Contact</a></li>
+        <li class="footer__link"><a href="/privacy-policy">Privacy Policy</a></li>
+        <li class="footer__link"><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+    </ul>
+    <small class="footer__copy">© 2026 StackPreserve. All rights reserved.</small>
+</footer>
+<script src="js/menu.js"></script>
+<script src="js/home.js"></script>
 </body>
 </html>

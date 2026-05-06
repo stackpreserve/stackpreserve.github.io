@@ -35,6 +35,7 @@ a {
 }
 @media (max-width: 930px) { .nav-bar__mobile-inner { display: flex; } }
 .nav-bar__left { display: flex; align-items: center; gap: 20px; }
+/*.nav-bar__logo-text { font-size: 20px; font-weight: 700; text-decoration: none; color: #0a0a0a; letter-spacing: -0.5px; }*/
 .nav-bar__logo-link {
     display: flex;
 }
@@ -79,113 +80,100 @@ a {
 @media (hover: hover) and (pointer: fine) { .menu__signup:hover { background-color: #464646; } }
 
 /* PAGE */
-.page {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 24px;
-    background:
-        radial-gradient(ellipse 70% 50% at 50% 0%, rgba(17,170,162,0.06) 0%, transparent 70%),
-        #ffffff;
-}
+.page { flex: 1; }
 
-.contact-card {
-    width: 100%;
-    max-width: 560px;
+/* HERO */
+.product-hero {
+    padding: 80px 24px 60px;
     text-align: center;
+    background:
+        radial-gradient(ellipse 70% 50% at 50% 0%, rgba(17,170,162,0.07) 0%, transparent 70%),
+        #ffffff;
+    border-bottom: 1px solid #ebebeb;
 }
-
-.contact-card__eyebrow {
+.product-hero__eyebrow {
     display: inline-flex; align-items: center; gap: 8px;
     background: rgba(17,170,162,0.08); border: 1px solid rgba(17,170,162,0.2);
     color: #0b807a; font-size: 12px; font-weight: 600;
     letter-spacing: 0.06em; text-transform: uppercase;
     padding: 5px 12px; border-radius: 100px; margin-bottom: 24px;
 }
+.eyebrow-dot { width: 6px; height: 6px; border-radius: 50%; background: #11aaa2; animation: pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(0.7); } }
+.product-hero__title { font-size: clamp(30px, 4vw, 48px); font-weight: 800; letter-spacing: -1.5px; line-height: 1.15; margin: 0 0 16px; }
+.product-hero__title em { font-style: normal; color: #11aaa2; }
+.product-hero__sub { font-size: 17px; color: #666; line-height: 1.7; margin: 0 auto; max-width: 520px; }
 
-.contact-card__title {
-    font-size: clamp(30px, 4vw, 44px);
-    font-weight: 800;
-    letter-spacing: -1.5px;
-    line-height: 1.15;
-    margin: 0 0 16px;
+/* PRICING SECTION */
+.pricing {
+    padding: 80px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
 }
 
-.contact-card__sub {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.7;
-    margin: 0 0 40px;
+.pricing-card {
+    width: 100%;
+    max-width: 460px;
+    border-radius: 20px;
+    border: 1.5px solid #11aaa2;
+    overflow: hidden;
+    box-shadow: 0 8px 40px rgba(17,170,162,0.1), 0 2px 8px rgba(0,0,0,0.06);
 }
 
-.contact-card__email-box {
-    background: #f7f7f7;
-    border: 1px solid #e8e8e8;
-    border-radius: 16px;
-    padding: 32px;
-    margin-bottom: 32px;
+.pricing-card__header {
+    background: #11aaa2;
+    padding: 32px 36px 28px;
+    color: #fff;
 }
-
-.contact-card__email-label {
-    font-size: 12px;
+.pricing-card__badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #fff;
+    font-size: 11px;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #999;
-    margin: 0 0 10px;
+    padding: 4px 10px;
+    border-radius: 100px;
+    margin-bottom: 16px;
 }
+.pricing-card__plan { font-size: 22px; font-weight: 700; margin: 0 0 8px; }
+.pricing-card__price { display: flex; align-items: baseline; gap: 6px; }
+.pricing-card__amount { font-size: 52px; font-weight: 800; letter-spacing: -2px; line-height: 1; }
+.pricing-card__period { font-size: 16px; opacity: 0.8; }
+.pricing-card__desc { font-size: 14px; opacity: 0.85; margin-top: 10px; line-height: 1.5; }
 
-.contact-card__email-link {
-    font-size: 22px;
-    font-weight: 700;
-    color: #11aaa2;
+.pricing-card__body { background: #fff; padding: 32px 36px; }
+.pricing-card__features { list-style: none; margin: 0 0 28px; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.pricing-card__feature { display: flex; align-items: flex-start; gap: 12px; font-size: 14px; color: #333; line-height: 1.5; }
+.feature-check {
+    width: 20px; height: 20px; min-width: 20px;
+    border-radius: 50%;
+    background: rgba(17,170,162,0.1);
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 1px;
+}
+.feature-check svg { width: 10px; height: 10px; }
+
+.pricing-card__cta {
+    display: block; width: 100%; text-align: center;
+    background: #0a0a0a; color: #fff;
+    padding: 14px; border-radius: 12px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px; font-weight: 600;
     text-decoration: none;
-    letter-spacing: -0.5px;
-    transition: color 0.2s;
-    word-break: break-all;
-}
-
-.contact-card__email-link:hover { color: #0e9690; }
-
-.contact-card__email-note {
-    font-size: 13px;
-    color: #999;
-    margin: 12px 0 0;
-    line-height: 1.5;
-}
-
-.contact-card__divider {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 32px;
-    color: #ccc;
-    font-size: 13px;
-}
-.contact-card__divider::before,
-.contact-card__divider::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: #ebebeb;
-}
-
-.contact-card__discord {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: #0a0a0a;
-    color: #fff;
-    padding: 13px 24px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
     transition: background 0.2s, transform 0.15s;
 }
-.contact-card__discord:hover { background: #222; transform: translateY(-2px); }
-.discord-icon { width: 20px; height: 20px; }
+.pricing-card__cta:hover { background: #222; transform: translateY(-1px); }
+
+.pricing-note {
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+}
 
 /* FOOTER */
 .footer { background: #fff; border-top: 1px solid #dadada; display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 28px 24px; }
