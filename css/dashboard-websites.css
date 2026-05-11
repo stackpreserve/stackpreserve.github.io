@@ -20,8 +20,12 @@
 }
 
 .website-list__input-label {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 5px;
+}
+
+.website-list__input {
+    margin-bottom: 30px;
 }
 
 .website-list__error {
@@ -36,7 +40,7 @@
 }
 
 .website-list__code-cont {
-    margin-top: 30px;
+    margin-top: 15px;
     display: flex;
 }
 
