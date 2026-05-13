@@ -1,0 +1,322 @@
+body {
+    background-color: #121212;
+}
+
+/*menu*/
+
+.menu {
+    background-color: #121212;
+    border-color: #2a2a2a;
+}
+
+.menu li > img:first-child, .menu__close-icon {
+    background: transparent;
+    filter: invert(1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .item-list > li:hover {
+        background-color: #2a2a2a;
+    }
+}
+
+.menu__item-list, .menu__issues {
+    color: #eaeaea;
+}
+
+.menu__line {
+    border-color: #2a2a2a;
+}
+
+/*nav bar*/
+
+.nav-bar {
+    background-color: #121212;
+}
+
+.search {
+    border-color: #2a2a2a;
+}
+
+.search, .search__input {
+    background-color: #121212;
+    color: #eaeaea;
+}
+
+.search__icon {
+    background: transparent;
+    filter: invert(1);
+}
+
+.search-suggestions {
+    background-color: #121212;
+    color: #eaeaea;
+    border-color: #2a2a2a;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .search-suggestions > p:hover {
+        background-color: #2a2a2a;
+        cursor: pointer;
+    }
+}
+
+.search-suggestions .selected {
+    background-color: #2a2a2a;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .icon:hover {
+        background-color: #2a2a2a;
+    }
+}
+
+.selected-icon {
+    background-color: #2a2a2a;
+}
+
+.icon img {
+    background: transparent;
+    filter: invert(1);
+}
+
+.community-menu {
+    background-color: #121212;
+    color: #eaeaea;
+    border-color: #2a2a2a;
+}
+
+.profile-menu {
+    background-color: #121212;
+    color: #eaeaea;
+    border-color: #2a2a2a;
+}
+
+/*page*/
+
+.page-center {
+    background-color: #121212;
+}
+
+h2, h3, p {
+    color: #eaeaea;
+}
+
+.title-divider {
+    border-color: #2a2a2a;
+}
+
+.overview__counter {
+    border-color: #2a2a2a !important;
+}
+
+.apexcharts-tooltip, .apexcharts-xaxistooltip {
+    background-color: #121212 !important;
+    border-color: #2a2a2a !important;
+    color: #eaeaea;
+}
+
+.apexcharts-xaxistooltip-text {
+    color: #eaeaea;
+}
+
+.dynamic__graph tspan {
+    fill: #eaeaea !important;
+}
+
+.dropdown, .dropdown option {
+    background-color: #121212;
+    color: #eaeaea;
+    border-color: #2a2a2a !important;
+}
+
+.dyna-list__empty {
+    background-color: #2a2a2a;
+}
+
+.dyna-list__empty-text {
+    color: #636363;
+}
+
+.loader {
+    --c: no-repeat linear-gradient(#636363 0 0);
+}
+
+.dyna-list__list > div:first-child > p {
+    color: #eaeaea;
+}
+
+.dyna-list__list > div > p {
+    color: #d3d3d3;
+}
+
+.dyna-list__list > div {
+    border-color: #2a2a2a;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .dyna-list__list > div:not(:first-child):hover {
+        cursor: pointer;
+        background-color: #2a2a2a;
+    }
+}
+
+.detail-list__list {
+    background-color: #333333;
+}
+
+.detail-list__list > div > p {
+    color: #c5c5c5;
+}
+
+.detail-list__list > div > p:last-child {
+    color: #c5c5c5;
+}
+
+.detail-list__list > div {
+    border-color: #575757;
+}
+
+.website-details__edit-icon {
+    background: transparent;
+    filter: invert(1);
+}
+
+.website-details__edit {
+    color: #eaeaea !important;
+    background-color: #333333 !important;
+    border-color: #eaeaea !important;
+}
+
+.multi-list__empty {
+    background-color: #2a2a2a;
+}
+
+.multi-list__empty-text {
+    color: #636363;
+}
+
+.loader {
+    --c: no-repeat linear-gradient(#636363 0 0);
+}
+
+.multi-list__list > div:first-child > p {
+    color: #eaeaea;
+}
+
+.multi-list__list > div > p {
+    color: #d3d3d3;
+}
+
+.multi-list__list > div {
+    border-color: #2a2a2a;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .multi-list__list > div:not(:first-child):hover {
+        cursor: pointer;
+        background-color: #2a2a2a;
+    }
+}
+
+.text-field {
+    background-color: #121212;
+    color: #eaeaea;
+    border-color: #4a4a4a;
+}
+
+.password-field {
+    background-color: #121212;
+    color: #eaeaea;
+}
+
+.password-field__password {
+    background-color: #121212;
+    color: #eaeaea;
+    border-color: #4a4a4a;
+}
+
+.password-field__visibility {
+    border-color: #4a4a4a;
+}
+
+.password-field__visibility-icon {
+    background: transparent;
+    filter: invert(1);
+}
+
+/*settings*/
+
+.settings-gallery__card {
+    border-color: #2a2a2a !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .settings-gallery__card:hover {
+        border-color: #525252 !important;
+    }
+}
+
+.settings-gallery__img {
+    background: transparent;
+    filter: invert(1);
+}
+
+.legal__list li::marker {
+    color: #eaeaea;
+}
+
+.account__credential-info {
+    background-color: #121212 !important;
+    color: #eaeaea !important;
+    border-color: #4a4a4a !important;
+}
+
+.account__credential-edit {
+    background-color: #121212 !important;
+    color: #eaeaea !important;
+    border-color: #4a4a4a !important;
+}
+
+.account__credential-edit-icon {
+    background: transparent;
+    filter: invert(1);
+}
+
+/*window form*/
+
+.window {
+    background-color: #121212;
+    border-color: #2a2a2a;
+}
+
+.window__close img {
+    background: transparent;
+    filter: invert(1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .window__close:hover {
+        background-color: #2a2a2a;
+    }
+}
+
+.cover {
+    background-color: #1f1f1f;
+}
+
+.rr-player .rr-controller {
+    background-color: #121212 !important;
+}
+
+.rr-player .rr-progress.svelte-19ke1iv.svelte-19ke1iv {
+    border-color: #121212 !important;
+}
+
+.rr-player .rr-controller__btns button, .rr-player .rr-timeline__time, .rr-player .label {
+    color: #eaeaea !important;
+}
+
+.rr-player .rr-controller__btns button:first-child, .rr-player .rr-controller__btns button:last-child {
+    fill: #eaeaea !important;
+}

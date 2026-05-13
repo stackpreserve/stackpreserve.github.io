@@ -1,1 +1,15 @@
-<h2>Theme</h2>
+<link rel="stylesheet" href="css/dashboard-settings-theme.css">
+<div class="title-cont">
+    <div class="icon title-cont__back-to-list"><img src="assets/back.webp"></div>
+    <h2 class="title-cont__setting">Settings > Theme</h2>
+</div>
+<div class="loader-list-el"></div>
+<div style="display: none" class="theme">
+    <p class="theme__explanation">Change the theme to either dark or light mode.</p>
+    <select class="dropdown theme__dropdown">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+    </select>
+    <button class="button theme__submit">Save changes</button>
+</div>
+<script src="js/dashboard-settings-theme.js"></script>
