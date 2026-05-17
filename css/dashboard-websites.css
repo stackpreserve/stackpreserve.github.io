@@ -24,14 +24,14 @@
     margin-bottom: 5px;
 }
 
-.website-list__input {
-    margin-bottom: 30px;
-}
-
 .website-list__error {
     margin: 0px;
     margin-top: 5px;
     color: #ef4639
+}
+
+.website-list__part-2-title {
+    margin-top: 30px;
 }
 
 .website-list__explanation {

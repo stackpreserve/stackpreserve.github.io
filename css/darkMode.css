@@ -192,6 +192,10 @@ h2, h3, p {
     border-color: #575757;
 }
 
+.detail-list__loader-cont {
+    background-color: #2a2a2a;
+}
+
 .website-details__edit-icon {
     background: transparent;
     filter: invert(1);
