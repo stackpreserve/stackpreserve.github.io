@@ -67,6 +67,59 @@ body {
     width: 100%;
 }
 
+.auth-form__OAuth-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.auth-form__OAuth {
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-form__OAuth-icon {
+    width: 20px;
+}
+
+.auth-form__google-OAuth {
+    border: 1px solid #dadada;
+    color: #000000;
+}
+
+.auth-form__github-OAuth {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.auth-form__OAuth-text {
+    margin: 0px;
+}
+
+.auth-form__divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.auth-form__divider-line {
+    flex: 1;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.auth-form__divider-text {
+    margin: 0px;
+    color: #a7a7a7;
+    font-size: 15px;
+}
+
 @media screen and (max-width: 500px) {
     /*.auth-form__credentials {
         width: 90vw;

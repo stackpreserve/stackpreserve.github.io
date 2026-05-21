@@ -5,19 +5,29 @@
 </div>
 <div class="loader-list-el"></div>
 <div style="display: none" class="account">
-    <h3 class="account__section-title">Email address</h3>
-    <div class="account__credential">
-        <div class="account__credential-info">
-            <span class="account__email"></span>
+    <div style="display: none" class="account__regular">
+        <h3 class="account__section-title">Email address</h3>
+        <div class="account__credential">
+            <div class="account__credential-info">
+                <span class="account__email"></span>
+            </div>
+            <button class="button account__edit-email account__credential-edit">Edit<img class="account__credential-edit-icon" src="assets/edit.webp"></button>
         </div>
-        <button class="button account__edit-email account__credential-edit">Edit<img class="account__credential-edit-icon" src="assets/edit.webp"></button>
+        <h3 class="account__section-title">Password</h3>
+        <div class="account__credential">
+            <div class="account__credential-info">
+                <span>••••••••••</span>
+            </div>
+            <button class="button account__edit-password account__credential-edit">Edit<img class="account__credential-edit-icon" src="assets/edit.webp"></button>
+        </div>
     </div>
-    <h3 class="account__section-title">Password</h3>
-    <div class="account__credential">
-        <div class="account__credential-info">
-            <span>••••••••••</span>
+    <div style="display: none" class="account__oauth">
+        <h3 class="account__section-title">Email address</h3>
+        <div class="account__oauth-email-cont">
+            <span class="account__email-oauth"></span>
         </div>
-        <button class="button account__edit-password account__credential-edit">Edit<img class="account__credential-edit-icon" src="assets/edit.webp"></button>
+        <h3 class="account__section-title">OAuth method</h3>
+        <img class="account__oauth-method-icon">
     </div>
     <h3 class="account__section-title">Delete account</h3>
     <button class="button account__delete-account">Delete</button>
@@ -67,16 +77,16 @@
         </div>
         <div class="window__inner">
             <h3 class="window__title">Delete account</h3>
-            <p class="account__delete-warning">Once an account is scheduled for deletion, it will be permenantly deleted after 30 days of not logging in, simply log in to cancel the deletion process. Enter your password below to schedule deletion.</p>
-            <p class="account__delete-password-label">Enter password</p>
-            <div class="account__delete-password-field password-field">
+            <p class="account__delete-warning">Once an account is scheduled for deletion, it will be permenantly deleted after 30 days of not logging in, simply log in to cancel the deletion process.</p>
+            <p class="account__delete-instruction"></p>
+            <div style="display: none" class="account__delete-password-field password-field">
                 <input name="password" type="password" class="password-field__password account__delete-password">
                 <div class="password-field__visibility"><img class="password-field__visibility-icon" draggable="false" src="assets/hide.webp"></div>
             </div>
+            <input style="display: none" class="account__oauth-confirmation text-field">
             <p style="display: none" class="account__delete-error"></p>
             <button class="button account__delete-submit">Schedule deletion and log out</button>
         </div>
     </div>
 </div>
 <script src="js/dashboard-settings-account.js"></script>
-<!--<p>delete form with warning, password input field and button "schedule deletion and log out"</p>-->

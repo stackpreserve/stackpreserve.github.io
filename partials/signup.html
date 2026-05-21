@@ -9,13 +9,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
-    <title>Create account - StackPreserve</title>
+    <title>Sign up - StackPreserve</title>
 </head>
 <body>
     <div class="auth-form">
         <div class="auth-form__first">
-            <h1 class="auth-form__title">Create account</h1>
+            <h1 class="auth-form__title">Sign up</h1>
             <div class="auth-form__credentials">
+                <div class="auth-form__OAuth-cont">
+                    <a class="auth-form__OAuth auth-form__google-OAuth" href="https://api.stackpreserve.com/oauth/google">
+                        <img class="auth-form__OAuth-icon" src="assets/google.webp">
+                        <p class="auth-form__OAuth-text">Continue with Google</p>
+                    </a>
+                    <a class="auth-form__OAuth auth-form__github-OAuth" href="https://api.stackpreserve.com/oauth/github">
+                        <img class="auth-form__OAuth-icon" src="assets/github.webp">
+                        <p class="auth-form__OAuth-text">Continue with GitHub</p>
+                    </a>
+                </div>
+                <div class="auth-form__divider">
+                    <div class="auth-form__divider-line"></div>
+                    <p class="auth-form__divider-text">OR</p>
+                    <div class="auth-form__divider-line"></div>
+                </div>
                 <p class="auth-form__label">Email</p>
                 <input name="email" class="text-field auth-form__email">
                 <p style="display: none;" class="auth-form__email-error"></p>
@@ -33,7 +48,7 @@
                 </div>
                 <button class="button auth-form__submit">Sign up</button>
             </div>
-            <p class="auth-form__mistake">Already have an account? <a href="/login">Sign in</a></p>
+            <p class="auth-form__mistake">Already have an account? <a href="/login">Log in</a></p>
         </div>
         <div style="display: none" class="auth-form__second">
             <h1 class="auth-form__title">Verify email</h1>

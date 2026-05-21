@@ -33,6 +33,25 @@
     gap: 5px;
 }
 
+.account__oauth-email-cont {
+    border: 1px solid #dadada;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+}
+
+.account__oauth-email-cont span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+}
+
 .account__credential-info {
     border: 1px solid #dadada;
     background-color: #f0f0f0;
@@ -120,7 +139,7 @@
     margin-bottom: 15px;
 }
 
-.account__delete-password-label {
+.account__delete-instruction {
     margin-top: 0px;
     margin-bottom: 5px;
 }
