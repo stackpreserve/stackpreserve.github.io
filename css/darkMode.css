@@ -128,7 +128,7 @@ h2, h3, p {
 .apexcharts-tooltip, .apexcharts-xaxistooltip {
     background-color: #121212 !important;
     border-color: #2a2a2a !important;
-    color: #eaeaea;
+    color: #eaeaea !important;
 }
 
 .apexcharts-xaxistooltip-text {
