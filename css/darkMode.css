@@ -324,18 +324,42 @@ h2, h3, p {
     background-color: #1f1f1f;
 }
 
-.rr-player .rr-controller {
+.player {
+    border-color: #2a2a2a !important;
+    background-color: #121212 !important;
+    color: #eaeaea;
+}
+
+.player__controls {
     background-color: #121212 !important;
 }
 
-.rr-player .rr-progress.svelte-19ke1iv.svelte-19ke1iv {
-    border-color: #121212 !important;
+.player__play {
+    background-color: #121212;
+    border: 1px solid #4a4a4a;
+    border-radius: 4px;
 }
 
-.rr-player .rr-controller__btns button, .rr-player .rr-timeline__time, .rr-player .label {
-    color: #eaeaea !important;
+.player__play img {
+    background: transparent;
+    filter: invert(1);
 }
 
-.rr-player .rr-controller__btns button:first-child, .rr-player .rr-controller__btns button:last-child {
-    fill: #eaeaea !important;
+.player__speed {
+    background-color: #121212;
+    border: 1px solid #4a4a4a;
+    color: #eaeaea;
+    border-radius: 4px;
+}
+
+.player__resize {
+    background-color: #121212;
+    border: 1px solid #4a4a4a;
+    color: #eaeaea;
+    border-radius: 4px;
+}
+
+.player__resize img {
+    background: transparent;
+    filter: invert(1);
 }

@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="css/dashboard-recordings.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rrweb-player@latest/dist/style.css"/>
+<link rel="stylesheet" href="css/player.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rrweb-player@latest/dist/style.css">
 <script src="https://cdn.jsdelivr.net/npm/rrweb-player@latest/dist/index.js"></script>
+<script src="js/player.js"></script>
 <h2 class="title">Recordings</h2>
 <div class="title-divider"></div>
 <div class="dyna-list loader-list-el"></div>
@@ -11,11 +13,14 @@
     </div>
     <div class="window__inner">
         <div class="player-window__data"></div>
+        <div class="player"></div>
+        <!--<div class="player-window__nav-cont">
+            <div class="icon player-window__prev"><img src="assets/prev.webp"></div>
+            <div class="icon player-window__next"><img src="assets/next.webp"></div>
+        </div>-->
         <div class="player-window__nav-cont">
             <div class="icon player-window__prev"><img src="assets/prev.webp"></div>
-            <div class="player-window__wrapper">
-                <div id="player"></div>
-            </div>
+            <p class="player-window__cur">1 / 45</p>
             <div class="icon player-window__next"><img src="assets/next.webp"></div>
         </div>
     </div>

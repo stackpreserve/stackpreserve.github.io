@@ -28,15 +28,32 @@
     white-space: nowrap;
 }
 
-.player-window__nav-cont {
-    display: flex;
-    width: 100%;
-    margin-top: 24px;
-    justify-content: center;
-    align-items: center;
+.player {
+    width: 90%;
+    align-self: center;
+    margin-top: 15px;
 }
 
-.player-window__wrapper {
+@media (max-width: 760px) {
+    .player {
+        width: 100%;
+        align-self: center;
+    }
+}
+
+.player-window__nav-cont {
+    margin-top: 15px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.player-window__cur {
+    margin: 0px;
+}
+
+/*.player-window__wrapper {
     width: calc(100% - 86px);
     position: relative;
     margin-right: 5px;
@@ -67,10 +84,6 @@
     background: #11aaa2 !important;
 }
 
-/*.rr-player .rr-player__frame {
-    background-color: #000000;
-}*/
-
 .rr-controller__btns button:not(:last-child) {
     margin-right: 5px;
-}
+}*/
