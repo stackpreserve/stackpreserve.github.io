@@ -179,6 +179,10 @@ a {
         max-width: none;
         width: 100%;
     }
+
+    .hero__social-proof {
+        margin-top: 10px !important;
+    }
 }
 
 .hero__eyebrow {
