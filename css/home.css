@@ -200,7 +200,7 @@ a {
     font-size: clamp(32px, 4.5vw, 52px); font-weight: 800;
     line-height: 1.12; letter-spacing: -1.5px; margin: 0 0 20px; color: #0a0a0a;
 }
-.hero__title em { font-style: normal; color: #11aaa2; }
+.hero__title em { font-style: normal; color: #ef4639; }
 .hero__subtitle {
     font-size: 17px; font-weight: 400; line-height: 1.7;
     color: #555; margin: 0 0 36px; max-width: 440px;
